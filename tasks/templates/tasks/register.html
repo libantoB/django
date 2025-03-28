@@ -1,0 +1,11 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+<h1 class="mb-3">Regístrate</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+<a href="{% url 'login' %}" class="btn btn-secondary mt-3">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+{% endblock %}
