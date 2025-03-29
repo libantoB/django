@@ -1,0 +1,10 @@
+# Archivos de Django
+*.pyc
+__pycache__/
+
+# Configuración de bases de datos locales
+db.sqlite3
+
+# Configuración de entornos virtuales
+venv/
+env/
